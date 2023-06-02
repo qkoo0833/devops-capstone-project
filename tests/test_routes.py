@@ -139,7 +139,7 @@ class TestAccountService(TestCase):
             f"{BASE_URL}/0"
         )
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-    
+
     def test_update_account(self):
         # create an Account to update
         test_account = AccountFactory()
